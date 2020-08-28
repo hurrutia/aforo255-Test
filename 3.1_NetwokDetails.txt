@@ -1,0 +1,102 @@
+PS C:\WINDOWS\system32> docker network inspect aforo255-test
+[
+    {
+        "Name": "aforo255-test",
+        "Id": "618fce20fa0f652197a2a7df17cd5b2f769e13521fa62a218b340cd144cfcf76",
+        "Created": "2020-08-21T20:53:28.5874146Z",
+        "Scope": "local",
+        "Driver": "bridge",
+        "EnableIPv6": false,
+        "IPAM": {
+            "Driver": "default",
+            "Options": {},
+            "Config": [
+                {
+                    "Subnet": "172.19.0.0/16",
+                    "Gateway": "172.19.0.1"
+                }
+            ]
+        },
+        "Internal": false,
+        "Attachable": false,
+        "Ingress": false,
+        "ConfigFrom": {
+            "Network": ""
+        },
+        "ConfigOnly": false,
+        "Containers": {
+            "2a2d3c8cb9ea765f5997466ee0a8363f565d7668ffc2eefbe3344645a35da47a": {
+                "Name": "app-transaction",
+                "EndpointID": "0682e61a5686d9f4afd9581c919578b5be974cd4dcabdbbfc746025f2481b2ac",
+                "MacAddress": "02:42:ac:13:00:09",
+                "IPv4Address": "172.19.0.9/16",
+                "IPv6Address": ""
+            },
+            "87ad8a48a993ac6f859c7c5d18f6ee709902d7d2ee5586724ada9cd513c0279c": {
+                "Name": "app-pay",
+                "EndpointID": "c40deb38dd4229fd098be249bb13d22007f1a4cce8ca11be2e8657e429d2d284",
+                "MacAddress": "02:42:ac:13:00:07",
+                "IPv4Address": "172.19.0.7/16",
+                "IPv6Address": ""
+            },
+            "8aac103573a330d005f929b0581238ea0247d2c000d694a661a403e8e3372daf": {
+                "Name": "microservicio-mysql8Test",
+                "EndpointID": "c3756d5a5d26dc2a20d6e67caa2b428cb74c36535db1a0984678d6e0fe28e559",
+                "MacAddress": "02:42:ac:13:00:05",
+                "IPv4Address": "172.19.0.5/16",
+                "IPv6Address": ""
+            },
+            "9347c8b1e363c0081c8d90ed0dcce19ac78354795d01a34778019985b28e8805": {
+                "Name": "servicekafkaTest",
+                "EndpointID": "ee673da1e6d11cd724b8d075358cbf45799b18b673ae5afdc77684fcc6835a29",
+                "MacAddress": "02:42:ac:13:00:02",
+                "IPv4Address": "172.19.0.2/16",
+                "IPv6Address": ""
+            },
+            "a7d7f3772ac7c01a6339c815037d1554f7d9ce666d421960e6cae9427b4564b3": {
+                "Name": "sqlserviceTest",
+                "EndpointID": "67895fcda78dde0d9e0c68bcffd2c230980970bf0d934c30812ad50d16223856",
+                "MacAddress": "02:42:ac:13:00:0a",
+                "IPv4Address": "172.19.0.10/16",
+                "IPv6Address": ""
+            },
+            "acd49c14edfaa0f8bf620c627308dee2fdc826b186f7e0e0bf8b0438f824d5ce": {
+                "Name": "mongodbTest",
+                "EndpointID": "96a0c22f12b9a669d4a4941b56485b9f3a8bac3536fe134e7c82fde735683be4",
+                "MacAddress": "02:42:ac:13:00:03",
+                "IPv4Address": "172.19.0.3/16",
+                "IPv6Address": ""
+            },
+            "d19e87bcb9de6a8ca8b5e5cd246ce43ff09cd98b54d7b54c297c211e24ee7ac4": {
+                "Name": "app-security",
+                "EndpointID": "f786640cda9bd45a3dc88030e7a9526a9370e35e3ec59db76c69954f1c6842d4",
+                "MacAddress": "02:42:ac:13:00:0b",
+                "IPv4Address": "172.19.0.11/16",
+                "IPv6Address": ""
+            },
+            "f1819df71bb1df8d76b870078010294b94e5e62e9c9c357f62d30d8cd5ea87c1": {
+                "Name": "microservicio-postgres12Test",
+                "EndpointID": "196be98de7976ca90246719abecd2d36b4f92cd3697be9f441130ae879af3eeb",
+                "MacAddress": "02:42:ac:13:00:04",
+                "IPv4Address": "172.19.0.4/16",
+                "IPv6Address": ""
+            },
+            "f3439185c6fcefdfe4f8a093cbd60a6f6ea1eb66c8951500345eb7e74adc305c": {
+                "Name": "app-config-server",
+                "EndpointID": "c9b72ba028506ce59dbd019678dcd3b06f61f9cfe24991323fc3a6389cce1d58",
+                "MacAddress": "02:42:ac:13:00:06",
+                "IPv4Address": "172.19.0.6/16",
+                "IPv6Address": ""
+            },
+            "f8f4c5f4bc18b0382cd1e97b61c6b46a305594e57b688de3152d2479bed0a963": {
+                "Name": "app-invoices",
+                "EndpointID": "6dbc720416b9c7a02be1b3505b7ebfcd1fde8e33ad89e3626b9e389ad5a173eb",
+                "MacAddress": "02:42:ac:13:00:08",
+                "IPv4Address": "172.19.0.8/16",
+                "IPv6Address": ""
+            }
+        },
+        "Options": {},
+        "Labels": {}
+    }
+]
